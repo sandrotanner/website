@@ -1,0 +1,20 @@
+name: Build and Deploy
+
+on:
+  push:
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps :
+      
+      - name: Install lowdown
+        run: |
+          git clone https://github.com/kristapsdz/lowdown.git
+          cd lowdown
+          ./configure
+          make
+          sudo make install
+         
