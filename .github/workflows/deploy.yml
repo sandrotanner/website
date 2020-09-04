@@ -18,6 +18,7 @@ jobs:
           cd lowdown
           ./configure
           make
+          make regress
           sudo make install
           cd ..
       
