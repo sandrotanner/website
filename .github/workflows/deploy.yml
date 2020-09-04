@@ -17,4 +17,13 @@ jobs:
           ./configure
           make
           sudo make install
+          cd ..
+      
+      - name: Install romanzolotarev/ssg5
+        run: |
+          mkdir -p bin
+          cd bin
+          curl -L https://www.romanzolotarev.com/bin/ssg5 > ssg5
+          chmod +x ssg5
+          cd ..
          
