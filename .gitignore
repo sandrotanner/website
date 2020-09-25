@@ -1,0 +1,21 @@
+### secrets ###
+.env
+
+### IDE stuff ###
+.idea
+.project
+.vscode
+
+
+### 📃 ###
+*.log
+
+### some operating systems are more annoying than others... ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Thumbs.db
+
+### Project specific stuff ###
+dst/
